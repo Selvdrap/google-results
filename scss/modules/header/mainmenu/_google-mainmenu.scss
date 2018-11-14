@@ -1,0 +1,34 @@
+@import 'search/google-search';
+
+.google-mainmenu__nav {
+  display: flex;
+  padding: 0 3px;
+}
+
+.google-mainmenu__list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  &--right {
+    margin-left: auto;
+  }
+}
+
+.google-mainmenu__item {
+  flex: 1 1 auto;
+}
+
+.google-mainmenu__link {
+  color: #777;
+  font-size: 13px;
+  text-decoration: none;
+  display: block;
+  padding: 28px 16px 12px;
+  transition: border 0.2s;
+  &--active {
+    border-bottom: 3px solid #1A73E8;
+    color: #1A73E8;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,73 @@
+.google-nav {
+  display: flex;
+}
+.google-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.google-menu__item {
+  flex: 0 1 30px;
+  width: 30px;
+}
+
+.google-menu__item:not(:last-child) {
+  margin-right: 15px;
+}
+
+.google-menu__link {
+  display: block;
+  color: rgba(0,0,0,1);
+  font-size: 13px;
+  line-height: 30px;
+  text-align: center;
+  text-decoration: none;
+  height: 30px;
+  transition: all 0.2s;
+  opacity: 0.8;
+}
+
+.google-menu__link:not(.google-menu__link--user):hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.google-menu__link--apps {
+  background-image: url(../img/show-apps-button.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 16px;
+  opacity: 0.58;
+}
+
+.google-menu__link--bell {
+  background-image: url(../img/notification.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 20px;
+  opacity: 0.58;
+}
+
+.google-menu__link--user {
+  position: relative;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #5327a4;
+  opacity: 1;
+}
+
+.google-menu__link--user:after {
+  content: 'G';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 34px;
+}

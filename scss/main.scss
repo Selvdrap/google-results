@@ -1,0 +1,45 @@
+@import 'modules/header/google-header';
+@import 'modules/results/google-results';
+@import 'modules/footer/google-footer';
+
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-family: arial,sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.google-header {
+  padding: 20px 28px 0;
+}
+
+.google__logo {
+  margin-top: 8px;
+  margin-right: 28px;
+}
+
+.google__nav {
+  margin-top: 8px;
+}
+
+.google-results {
+  padding-top: 15px;
+  padding-left: 150px;
+}
+
+.google-results__url {
+  margin-top: 20px;
+}
+
+.google-results__whitespace {
+  margin-top: 45px;
+}
+
+.google-results__pagination {
+  padding-left: 150px;
+}
